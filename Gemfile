@@ -17,11 +17,12 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem 'sqlite3', '~> 1.3', '>= 1.3.6'
 end
 
 group :development do
   gem "web-console"
-  gem 'sqlite3', '~> 1.3', '>= 1.3.6'
+  
 end
 
 group :production do
