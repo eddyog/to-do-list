@@ -11,7 +11,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'devise', '~> 4.9', '>= 4.9.3'
 
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+
 
 gem "bootsnap", require: false
 
@@ -21,15 +21,16 @@ end
 
 group :development do
   gem "web-console"
-  gem "sqlite3", "~> 1.4"
+  gem 'sqlite3', '~> 1.3', '>= 1.3.6'
 end
 
 group :production do
   gem 'pg', '~> 1.5', '>= 1.5.6'
-
 end
 
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "tzinfo-data", platforms: %i[ windows jruby ]
