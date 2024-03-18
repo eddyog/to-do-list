@@ -1,0 +1,87 @@
+<%= form_with(model: task) do |form| %>
+  <% if task.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+        <% task.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%# --------------------------------- REORDER ----------------------------- %>
+   <% if $option =='3' %>
+
+  <div class='field form-group'>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name, value: params[:name],  class:"form-control border border-primary-subtle" %>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description , value: params[:description], class:"form-control border border-primary-subtle"%>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :classification, style: "display: block" %>
+    <%= form.text_field :classification, value: params[:classification], class:"form-control border border-primary-subtle" %>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :deadline, style: "display: block" %>
+    <%= form.date_field :deadline %>
+  </div>
+    <div class='field form-group'>
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control border border-primary-subtle", value: current_user.id, type: :hidden %>
+  </div>
+<br/>
+  <div class='field'>
+    <%= form.submit class:'btn btn-primary' %>
+  </div>
+
+  <% end %>
+
+
+<%# --------------------------------- NEW --  EDIT ----------------------------- %>
+
+  <% if $option =='2' %>
+  
+
+   <div class='field form-group'>
+    <%= form.label :completed, style: "display: block", class:"" %>
+    <%= form.check_box :completed, class:'switch' %>
+  </div>
+ <br />
+<% end %>
+
+<% if ($option =='2') || ($option == '1')  %>
+  <div class='field form-group'>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name,  class:"form-control border border-primary-subtle" %>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description , class:"form-control border border-primary-subtle"%>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :classification, style: "display: block" %>
+    <%= form.text_field :classification,  class:"form-control border border-primary-subtle" %>
+  </div>
+<br />
+  <div class='field form-group'>
+    <%= form.label :deadline, style: "display: block" %>
+    <%= form.date_field :deadline %>
+  </div>
+<br/>
+  <div class='field form-group'>
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control border border-primary-subtle", value: current_user.id, type: :hidden %>
+  </div>
+<br />
+  <div class='field'>
+    <%= form.submit class:'btn btn-primary' %>
+  </div>
+  <% end %>
+<% end %>

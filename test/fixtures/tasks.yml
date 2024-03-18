@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  completed: false
+  name: MyString
+  description: MyString
+  classification: MyString
+  deadline: 2024-03-15
+
+two:
+  completed: false
+  name: MyString
+  description: MyString
+  classification: MyString
+  deadline: 2024-03-15
