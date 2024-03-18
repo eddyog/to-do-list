@@ -6,12 +6,13 @@ This application integrates essential features like a Navigation Bar, user accou
 
 # Tools
 These are the following tools and extensions to run the applications use “rails s” command to run the program. Please make sure that is the right version of Ruby since that is the extension that gives more issues.
-•	Visual studio code version 1.85.2.
-•	Git version 2.15.0
-•	Rails 7.1.3.2
-•	Node v20.11.1
-•	Ruby 3.2.1
-•	Sqlite3 3.37.0
-•	Bootstrap v5.3– To help to accelerate the design process from the front-end.
+<br/>
+•	Visual studio code version 1.85.2.<br/>
+•	Git version 2.15.0<br/>
+•	Rails 7.1.3.2<br/>
+•	Node v20.11.1<br/>
+•	Ruby 3.2.1<br/>
+•	Sqlite3 3.37.0<br/>
+•	Bootstrap v5.3– To help to accelerate the design process from the front-end.<br/>
 
 ### Eddy Gonzalez
