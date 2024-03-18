@@ -15,4 +15,5 @@ These are the following tools and extensions to run the applications use “rail
 •	Sqlite3 3.37.0<br/>
 •	Bootstrap v5.3– To help to accelerate the design process from the front-end.<br/>
 
-### Eddy Gonzalez
+### Created by 
+## Eddy Gonzalez
